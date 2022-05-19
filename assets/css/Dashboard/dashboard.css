@@ -188,7 +188,7 @@ main .date {
 
 main .date input[type="date"] {
   background-color: transparent;
-  color: var(--color-cardBack);
+  color: #fff;
   cursor: pointer;
 }
 
@@ -542,6 +542,12 @@ main .recent__orders a {
     margin: 0;
     margin-right: 10px;
   }
+  main .recent__orders table thead tr th:first-child {
+    display: none;
+  }
+  main .recent__orders table tbody tr td:first-child, main .recent__orders table tbody tr td:last-child {
+    display: none;
+  }
   .right__section {
     width: 94%;
     margin: 0 auto 4rem;
@@ -559,8 +565,8 @@ main .recent__orders a {
     width: 100%;
     margin: 0;
     z-index: 2;
-    -webkit-box-shadow: 0 1rem 1rem var(--color-info-white);
-            box-shadow: 0 1rem 1rem var(--color-info-white);
+    -webkit-box-shadow: 0 0.5rem 0.8rem var(--color-info-dark);
+            box-shadow: 0 0.5rem 0.8rem var(--color-info-dark);
   }
   .right__section .top .theme__toggler {
     width: 4.4rem;

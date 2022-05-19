@@ -154,7 +154,8 @@ main {
 
 		input[type="date"] {
 			background-color: transparent;
-			color: var(--color-cardBack);
+			// color: var(--color-cardBack);
+			color: #fff;
 			cursor: pointer;
 		}
 	}
@@ -473,6 +474,25 @@ main {
 				width: 100%;
 				margin: 0;
 				margin-right: 10px;
+				thead {
+					tr {
+						th {
+							&:first-child {
+								display: none;
+							}
+						}
+					}
+				}
+				tbody {
+					tr {
+						td {
+							&:first-child,
+							&:last-child {
+								display: none;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -491,7 +511,7 @@ main {
 			width: 100%;
 			margin: 0;
 			z-index: 2;
-			box-shadow: 0 1rem 1rem var(--color-info-white);
+			box-shadow: 0 0.5rem 0.8rem var(--color-info-dark);
 
 			.theme__toggler {
 				width: 4.4rem;

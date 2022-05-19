@@ -67,7 +67,6 @@ h1,
 h2 {
   font-family: "Raleway", sans-serif;
   font-size: 2.5rem;
-  color: --color-cardBack;
 }
 
 section {
@@ -105,7 +104,7 @@ a {
   transition: var(--transition-all);
   border: 1px solid var(--color-button);
   background-color: var(--color-button);
-  color: --color-cardBack;
+  color: var(--color-cardBack);
 }
 
 .btn:hover {
@@ -252,6 +251,7 @@ img {
 
 .news__later .newsletr__content h2 {
   text-align: center;
+  color: var(--color-text);
 }
 
 .news__later .newsletr__content p {
@@ -368,6 +368,9 @@ footer span {
   section > h2 {
     margin-bottom: 2rem;
   }
+  .nav .nav__items .logo__text {
+    font-size: 1.5rem;
+  }
   .nav .nav__items .search__loginReg-Dash {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -377,6 +380,13 @@ footer span {
   }
   .nav .nav__items .search__loginReg-Dash button.btn.login .nav__login-svg {
     display: none;
+  }
+  .news__later {
+    background: transparent;
+  }
+  .news__later .newsletr__content h2 {
+    font-size: 1.4rem;
+    color: var(--color-cardBack);
   }
 }
 /*# sourceMappingURL=style.css.map */
